@@ -21,6 +21,16 @@ public class ChromosomeOperator {
         chromosome.setValue(newValue);
     }
 
+    public static Chromosome createMutation(Chromosome chromosome, int index) {
+        if (index >= chromosome.getLength()) {
+            throw new RuntimeException(String.format("Cannot mutate in index %s of chromosome having length %", index, chromosome.getLength()));
+        }
+
+        long value = chromosome.getValue();
+        long newValue = value ^ (1 << index);
+        return Chromosome.of(newValue, chromosome.length);
+    }
+
     /**
      *
      * @param father

@@ -109,7 +109,8 @@ public class GeneticAlgorithm {
             for (int j = 0; j < chromosomeLength; j++) {
                 boolean shouldMutation = random.nextDouble() < mutationFraction;
                 if (shouldMutation) {
-                    ChromosomeOperator.doMutation(chromosomes.get(i), j);
+//                    ChromosomeOperator.doMutation(chromosomes.get(i), j);
+                    chromosomes.add(ChromosomeOperator.createMutation(chromosomes.get(i), j));
                 }
             }
         }

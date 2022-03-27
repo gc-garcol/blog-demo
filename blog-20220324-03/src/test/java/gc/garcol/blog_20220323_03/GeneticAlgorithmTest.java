@@ -17,7 +17,7 @@ public class GeneticAlgorithmTest {
 
         Function<Chromosome, Double> eval = eval(lowerBound, upperBound, totalFragment);
 
-        GeneticAlgorithm geneticAlgorithm = new GeneticAlgorithm(eval, totalBit, 50, 0.25, 0.01);
+        GeneticAlgorithm geneticAlgorithm = new GeneticAlgorithm(eval, totalBit, 100, 0.25, 0.05);
         Chromosome chromosome = geneticAlgorithm.getBestChromosomes(1000);
         double x = convertToRealVariable(chromosome, lowerBound, upperBound, 1 << totalBit);
         System.out.println(x);

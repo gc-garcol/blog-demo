@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>gc.garcol</groupId>
-	<artifactId>blog-20220323-03</artifactId>
+	<artifactId>blog-20220324-03</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>gc.garcol.blog-20220323-03 genetic-algorithm</name>
+	<name>gc.garcol.blog-20220324-03 genetic-algorithm</name>
 	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
